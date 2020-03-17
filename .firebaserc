@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "development": "pet-hotel-prod-8b81f",
+    "production": "pet-hotel-prod-8b81f"
+  }
+}
