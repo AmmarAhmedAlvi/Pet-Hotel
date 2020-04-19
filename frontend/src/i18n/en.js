@@ -52,12 +52,12 @@ const en = {
       },
       fields: {
         id: 'Id',
-        'owner': 'Owner',
-        'name': 'Name',
-        'type': 'Type',
-        'breed': 'Breed',
-        'size': 'Size',
-        'bookings': 'Booking',
+        owner: 'Owner',
+        name: 'Name',
+        type: 'Type',
+        breed: 'Breed',
+        size: 'Size',
+        bookings: 'Booking',
         createdAt: 'Created at',
         updatedAt: 'Updated at',
         createdAtRange: 'Created at',
@@ -113,26 +113,26 @@ const en = {
       },
       fields: {
         id: 'Id',
-        'owner': 'Owner',
-        'pet': 'Pet',
-        'arrivalRange': 'Arrival',
-        'arrival': 'Arrival',
-        'departureRange': 'Departure',
-        'departure': 'Departure',
-        'clientNotes': 'Notes',
-        'employeeNotes': 'Employee Notes',
-        'photos': 'Photos',
-        'status': 'Status',
-        'cancellationNotes': 'Cancellation Notes',
-        'feeRange': 'Total Fee',
-        'fee': 'Total Fee',
-        'receipt': 'Receipt',
+        owner: 'Owner',
+        pet: 'Pet',
+        arrivalRange: 'Arrival',
+        arrival: 'Arrival',
+        departureRange: 'Departure',
+        departure: 'Departure',
+        clientNotes: 'Notes',
+        employeeNotes: 'Employee Notes',
+        photos: 'Photos',
+        status: 'Status',
+        cancellationNotes: 'Cancellation Notes',
+        feeRange: 'Total Fee',
+        fee: 'Total Fee',
+        receipt: 'Receipt',
         createdAt: 'Created at',
         updatedAt: 'Updated at',
         createdAtRange: 'Created at',
       },
       enumerators: {
-        'status': {
+        status: {
           'booked': 'Booked',
           'progress': 'In Progress',
           'cancelled': 'Cancelled',
@@ -188,49 +188,17 @@ const en = {
   },
 
   roles: {
-    owner: {
-      label: 'Owner',
+    manager: {
+      label: 'Manager',
       description: 'Full access to all resources',
     },
-    editor: {
-      label: 'Editor',
-      description: 'Edit access to all resources',
+    employee: {
+      label: 'Employee',
+      description: 'Employee access',
     },
-    viewer: {
-      label: 'Viewer',
-      description: 'View access to all resources',
-    },
-    auditLogViewer: {
-      label: 'Audit Log Viewer',
-      description: 'Access to view audit logs',
-    },
-    iamSecurityReviewer: {
-      label: 'Security Reviewer',
-      description: `Full access to manage users roles`,
-    },
-    entityEditor: {
-      label: 'Entity Editor',
-      description: 'Edit access to all entities',
-    },
-    entityViewer: {
-      label: 'Entity Viewer',
-      description: 'View access to all entities',
-    },
-    petEditor: {
-      label: 'pet Editor',
-      description: 'Edit access to pet',
-    },
-    petViewer: {
-      label: 'pet Viewer',
-      description: 'View access to pet',
-    },
-    bookingEditor: {
-      label: 'booking Editor',
-      description: 'Edit access to booking',
-    },
-    bookingViewer: {
-      label: 'booking Viewer',
-      description: 'View access to booking',
+    petOwner: {
+      label: 'Pet Owner',
+      description: 'Pet Owner access',
     },
   },
 
@@ -283,7 +251,7 @@ const en = {
         'User with this email already exists',
       userNotFound: 'User not found',
       disablingHimself: `You can't disable yourself`,
-      revokingOwnPermission: `You can't revoke your own owner permission`,
+      revokingOwnPermission: `You can't revoke your own Manager permission`,
     },
   },
 
